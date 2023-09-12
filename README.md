@@ -2,7 +2,6 @@
 Algorithm practice
 
 ## 整数Integer
-
 ### 基础
 4种整数类型:
 * byte(-128 ~ 127)<br>
