@@ -1,9 +1,9 @@
 # Algorithms
 Algorithm practice
 
-##整数Integer
+## 整数Integer
 
-###基础
+### 基础
 4种整数类型:
 * byte(-128 ~ 127)<br>
 * short(-32768 ~ 32767)<br>
@@ -13,7 +13,7 @@ Algorithm practice
 
 <a href="./src/main/day6/integer/Divide.java">面试题1：整数除法<a/>
 
-###二进制
+### 二进制
 <br>&nbsp;&nbsp;&nbsp;&nbsp;二进制是指数字的每位都是0或1
 <br>
 
@@ -42,6 +42,7 @@ Algorithm practice
         <td>1 ^ 1 = 0</td>
     </tr>
 </table>
+<br>
 左移运算符：<<
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -84,8 +85,8 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 
 ----------------------------------------------------------------------------------------------------------------------
 
-##数组Array
+## 数组Array
 
-###双指针
+### 双指针
 
-###累加数组数字求子数组之和
+### 累加数组数字求子数组之和
