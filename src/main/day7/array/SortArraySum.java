@@ -21,9 +21,9 @@ public class SortArraySum {
      * @return <code>int[]</code> 符合条件的下标
      */
     public int[] towSum(int[] numbers,int target){
-        //设置指向第一个数据的指针
+        //设置指向第一个数据的前指针
         int pre = 0;
-        //设置指向最后一个数据的指针
+        //设置指向最后一个数据的后指针
         int post = numbers.length - 1;
         // 当前后指针相加之和不等于target时进入循环
         while((numbers[pre] + numbers[post]) != target){
