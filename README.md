@@ -6,7 +6,7 @@ Algorithm practice
 4种整数类型:
 * byte(-128 ~ 127)<br>
 * short(-32768 ~ 32767)<br>
-* int(-pow(2,31) ~ pow(2,31))&nbsp;&nbsp;min:0x80000000&nbsp;&nbsp;max:<code>Integer.MAX_VALUE</code><br>
+* int(-pow(2,31) ~ pow(2,31))&nbsp;&nbsp;min:0x80000000&nbsp;&nbsp;max:0x8fffffff<br>
 * long(-pow(2,63) ~ pow(2,63))
 <br>
 
