@@ -103,6 +103,8 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 <a href="./src/main/utils/simplenode/ArrayLists.java">ArrayList(未实现)</a>
 
 ### 双指针
+
+使用双指针的前提：数据为正数数组<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用两个方向相同或相反的指针扫描数组。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里的指针并不专指C语言中的指针，是能定位数据容器中某个数据的手段。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在数组中就是数组的下标。<br>
@@ -126,6 +128,14 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
   * 若两个指针指向的数字之和或乘积小于一个目标值，则P2右移在子数组最右边添加新的数据。
 
 <a href="./src/main/day7/array/SumMoreThan.java">面试题8：和大于等于k的最短子数组</a>
+<a href="./src/main/day8/array/MultipleSmaller.java">面试题9：乘积小于target的子数组</a>
 
 ### 累加数组数字求子数组之和
-(TO BE CONTINUE...)
+
+若数组中的数据有负数和零，双指针的思路可能并不使用。<br>
+因为数组中有负数时向子数组添加数据，不一定能增加子数组之和;向子数组删除数据，不一定能减少子数组之和。<br>
+假设下标为n的数组之和为S(n)，下标为i到j的子数组之和为S(j)-S(i-1)。<br>
+
+<a href="./src/main/day8/array/SumChildArray.java">面试题10：和为target的子数组</a>
+
+
