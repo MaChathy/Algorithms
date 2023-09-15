@@ -15,6 +15,7 @@ public class SumChildArray {
      *
      * 当扫描到第i个数字并求得前i个数字之和是x时，需要知道在i之前有多少个j使得前j个数字之和等于target-x<br>
      * 对于每个i，不但要保存前i个数字之和，还要保存每个和出现的次数。<br>
+     * 设置一个辅助映射，hashMap，键为前i个数字之和，值为每个数出现的次数
      * 时间复杂度：O(n)<br>
      * 空间复杂度：O(n)<br>
      * @param nums <code>int[]</code> 整数数组
