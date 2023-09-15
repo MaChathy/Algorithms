@@ -1,7 +1,7 @@
 package main.day8.array;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * 和为target的子数组
