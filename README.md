@@ -138,5 +138,11 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 假设下标为n的数组之和为S(n)，下标为i到j的子数组之和为S(j)-S(i-1)。<br>
 
 <a href="./src/main/day8/array/SumChildArray.java">面试题10：和为target的子数组</a>
+<br>
+<a href="./src/main/day8/array/BinaryCharArray.java">面试题11：0和1个数相同的子数组</a>
+<br>
+<a href="./src/main/day9/array/ChildSumEqual.java">面试题12：左右两边子数组的和相等</a>
+<br>
+<a href="./src/main/day9/matrix/MatrixChildSum.java">面试题13：二维矩阵的数字之和</a>
 
 
