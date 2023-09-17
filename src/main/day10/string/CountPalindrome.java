@@ -1,9 +1,5 @@
 package main.day10.string;
 
-import main.day10.string.PalindromeString;
-
-import java.util.Arrays;
-
 /**
  * 回文字符串的个数
  * @author fisher
@@ -48,6 +44,4 @@ public class CountPalindrome {
         }
         return count;
     }
-
-
 }

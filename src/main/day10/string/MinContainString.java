@@ -17,7 +17,7 @@ public class MinContainString {
      * @param t <code>String</code>-字符串t
      * @return <code>String</code>-若存在，则返回最短子字符串；否则返回空字符串""
      */
-    public static String minWindow(String s,String t){
+    public String minWindow(String s,String t){
 
         HashMap<Character,Integer> charToCount = new HashMap<>();
 
@@ -61,7 +61,4 @@ public class MinContainString {
         return minLength < Integer.MAX_VALUE ? s.substring(minStart,minEnd) : "";
     }
 
-    public static void main(String[] args) {
-        System.out.println(minWindow("ADDBANCAD","ABC"));
-    }
 }

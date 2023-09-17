@@ -16,7 +16,7 @@ public class PalindromeString {
      * @param s <code>String</code>-字符串s
      * @return <code>boolean</code>若是回文字符串，返回true；否则返回false
      */
-    public static boolean isPalindrome(String s){
+    public boolean isPalindrome(String s){
         int pre = 0;
         int post = s.length()-1;
         while(pre < post){
@@ -36,10 +36,4 @@ public class PalindromeString {
         }
         return true;
     }
-
-    public static void main(String[] args) {
-        System.out.println(isPalindrome("1Did1"));
-        System.out.println(isPalindrome("Race a car"));
-    }
-
 }

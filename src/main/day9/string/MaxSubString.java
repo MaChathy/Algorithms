@@ -15,7 +15,7 @@ public class MaxSubString {
      * @return <int>int</int>
      * @see ArrayUtils -用到<code>hasGreatThan1(int[] array)</code>方法
      */
-    public static int lengthOfLongestSubString(String s){
+    public int lengthOfLongestSubString(String s){
         int[] counts = new int[256];
         int result = 1;
         int left = 0;

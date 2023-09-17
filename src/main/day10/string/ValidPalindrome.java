@@ -15,11 +15,10 @@ public class ValidPalindrome {
      * @param s <code>String</code>-字符串s
      * @return <code>boolean</code>-若能，返回true;否则，返回false;
      */
-    public static boolean validPalindrome(String s){
+    public boolean validPalindrome(String s){
         int pre = 0;
         int post = s.length() - 1;
-        int drop = 0;
-        for (;pre < s.length() /2;pre++,post--){
+        for (;pre < s.length() >> 1;pre++,post--){
             if (s.charAt(pre) != s.charAt(post))
                 break;
         }
@@ -37,9 +36,4 @@ public class ValidPalindrome {
         }
         return start >= end;
     }
-
-    public static void main(String[] args) {
-        System.out.println(validPalindrome("acbca"));
-    }
-
 }
