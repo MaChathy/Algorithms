@@ -156,7 +156,7 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 
 <table style="padding-left: 10px">
   <tr>
-    <td colspan="2" style="text-align: center;font-size: medium"><code>String</code>类中主要方法及功能</td>
+    <td colspan="2" style="text-align: center"><code>String</code>类中主要方法及功能</td>
   </tr>
   <tr>
     <td>函数</td>
