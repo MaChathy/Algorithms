@@ -6,4 +6,10 @@ package main.day10;
  * @version 1.0
  */
 public class MinContainString {
+
+    public String minWindow(String s,String t){
+
+        return null;
+    }
+
 }
