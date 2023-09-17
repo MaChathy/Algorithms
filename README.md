@@ -145,4 +145,90 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 <br>
 <a href="./src/main/day9/matrix/MatrixChildSum.java">面试题13：二维矩阵的数字之和</a>
 
+# 
 
+## 字符串
+
+### 基础
+&nbsp;&nbsp;&nbsp;&nbsp;字符串由任意长度的字符组成。
+
+&nbsp;&nbsp;&nbsp;&nbsp;Java中用定义的类型<code>String</code>来表示字符串。
+
+<table style="padding-left: 10px">
+  <tr>
+    <td colspan="2" style="text-align: center;font-size: medium"><code>String</code>类中主要方法及功能</td>
+  </tr>
+  <tr>
+    <td>函数</td>
+    <td>函数功能</td>
+  </tr>
+  <tr>
+    <td><code>charAt</code></td>
+    <td>返回指定下标的字符串</td>
+  </tr>
+  <tr>
+    <td><code>compareTo</code></td>
+    <td>按照字典顺序比较两个字符串</td>
+  </tr>
+  <tr>
+    <td><code>equals</code></td>
+    <td>判断两个字符串的长度和内容是否相同</td>
+  </tr>
+  <tr>
+    <td><code>indexOf</code></td>
+    <td>返回字符串中某个字符或子字符串首次出现的下标位置</td>
+  </tr>
+  <tr>
+    <td><code>lastIndexOf</code></td>
+    <td>返回字符串中某个字符或子字符串最后出现的下标位置</td>
+  </tr>
+  <tr>
+    <td><code>length</code></td>
+    <td>返回字符串的长度</td>
+  </tr>
+  <tr>
+    <td><code>split</code></td>
+    <td>将字符串按照指定的分隔符进行分隔</td>
+  </tr>
+  <tr>
+    <td><code>substring</code></td>
+    <td>根据下表截取字符串</td>
+  </tr>
+  <tr>
+    <td><code>toLowerCase/toUpperCase</code></td>
+    <td>将字符串中所有的大写(或小写)字母转换成小写(或大写)字母</td>
+  </tr>
+</table>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Java中的<code>String</code>类型所表达的字符串是无法改变的，只能对字符串进行读操作。
+若对字符串进行写操作，那么修改的内容在返回值的字符串中，原来的字符串保持不变。
+
+    public static void test(){
+        String str1 = "offer";
+        //str2的内容是"OFFER"
+        String str2 = str1.toUpperCase();
+        //此时str1的内容仍然是"offer"
+        System.out.println(str1); 
+        System.out.println(str1);
+    }
+
+&nbsp;&nbsp;&nbsp;&nbsp;由于每次对<code>String</code>实例进行修改将创建一个新的<code>String</code>实例，不必要的内存开销过大，
+所以可以创建一个<code>StringBuilder</code>实例。
+
+
+### 双指针
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考在数组中，用两个指针来定位一个子数组;
+将字符串看成一个由字符组成的数组，也可以用两个指针来定位一个子字符串。
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以在移动这两个指针的同时统计两个指针之间的字符串中字符出现的次数，这样可以解决很多常见的题目。
+例如在一个字符串中定位另一个字符串的变位词等。
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由于这类题都与统计字母出现的次数相关，经常使用哈希表来储存每个元素出现的次数，
+因此解决这类题目通常需要同时使用双指针和哈希表。
+
+<a href="./src/main/day9/string/StringInclusion.java">面试题14：字符串中的变位词</a>
+<br>
+<a href="./src/main/day9/string/AllAnagrams.java">面试题15：字符串中的变位词</a>
+<br>
+<a href="./src/main/day9/string/MaxSubString.java">面试题16：字符串中的变位词</a>
