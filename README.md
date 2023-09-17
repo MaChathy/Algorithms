@@ -155,7 +155,7 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 &nbsp;&nbsp;&nbsp;&nbsp;Java中用定义的类型<code>String</code>来表示字符串。
 
 <table style="padding-left: 10px">
-  <tr>
+  <tr style="background: antiquewhite">
     <td colspan="2" style="text-align: center"><code style="text-align: center">String</code>类中主要方法及功能</td>
   </tr>
   <tr>
