@@ -232,3 +232,20 @@ Java中增加了一种无符号右移操作符:“>>>”,无论是正数还是�
 <a href="./src/main/day9/string/AllAnagrams.java">面试题15：字符串中所有的变位词</a>
 <br>
 <a href="./src/main/day9/string/MaxSubString.java">面试题16：不包含重复字符的最大子字符串</a>
+
+# 
+
+## 链表
+
+### 链表基础
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在链表中每个节点包含指向下一个节点的指针，
+这些指针把节点连接成链状数据结构。
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在创建连链表时无须事先知道链表的长度。
+
+
+### 哨兵节点
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;哨兵节点是为了简化处理链表边界条件而引入的附加链表节点。
+哨兵节点通常位于表的头部，它的值没有任何意义。在一个有哨兵节点的链表中，从第二个节点开始才真正保存有用的的值。
