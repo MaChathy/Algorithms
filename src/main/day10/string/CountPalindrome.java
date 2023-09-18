@@ -1,5 +1,11 @@
 package main.day10.string;
 
+import main.utils.string.Strings;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Enumeration;
+
 /**
  * 回文字符串的个数
  * @author fisher
@@ -35,7 +41,7 @@ public class CountPalindrome {
      * @param end <code>int</code>-子字符串结束下标
      * @return <code>int</code>-回文子字符串的个数
      */
-    private int countPalindrome(String s,int start,int end){
+    private int countPalindrome(String s,int start,int end) {
         int count = 0;
         while(start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)){
             count++;
