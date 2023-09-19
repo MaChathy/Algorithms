@@ -1,4 +1,4 @@
-package main.day11;
+package main.day11.listnode;
 
 import main.utils.simplenode.ListNode;
 import main.utils.simplenode.ListNodeUtil;
@@ -20,7 +20,7 @@ public class RemoveElement {
      * &nbsp;&nbsp;1)设置两个指针p1,p2都指向链表的第一个节点<br>
      * &nbsp;&nbsp;2)遍历链表，先将p1指针移动k-1步，p2指针不动<br>
      * &nbsp;&nbsp;3)此时p1指针指向第k个节点，p2指针指向第一个节点，同时右移p1，p2指针<br>
-     * &nbsp;&nbsp;4)当p1指针指向最后一个节点时，p2指针指向倒数第k个节点，此时删除p2指向的节点即可<br>
+     * &nbsp;&nbsp;4)当p1指针指向最后一个节点时，p2指针指向倒数第k个节点，此时删除p2指向的节点即可<br><br>
      *
      * 时间复杂度：O(n)<br>
      * 空间复杂度：O(n)<br>
