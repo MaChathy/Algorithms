@@ -2,6 +2,7 @@ package main.day1;
 
 import java.util.Stack;
 import main.utils.simplenode.ListNode;
+import main.utils.simplenode.ListNodeUtil;
 
 
 public class ReverseListDemo {
@@ -62,14 +63,8 @@ public class ReverseListDemo {
     }
 
     public static ListNode initListNode() {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        head.next.next.next.next.next = new ListNode(6);
-        head.next.next.next.next.next.next = null;
-        return head;
+
+        return ListNodeUtil.initializeSimpleNode().next;
     }
 
     public static void printList(ListNode head) {
