@@ -1,6 +1,7 @@
 package main.day12.listnode;
 
 import main.utils.simplenode.ListNode;
+import main.utils.simplenode.ListNodeUtil;
 
 /**
  * 反转链表
@@ -16,8 +17,12 @@ public class ReverseListNode {
      * 空间复杂度:O(1)<br>
      * @param head <code>ListNode</code>-单链表
      * @return <code>ListNode</code>-反转后链表的头节点
+     * @see main.utils.simplenode.ListNodeUtil
      */
-    public static ListNode reverseList(ListNode head){
+    public ListNode reverseList(ListNode head){
+        return ListNodeUtil.reverseNode(head);
+        /*
+        上一行代码等价于如下：
         //遍历链表时的前一个节点
         ListNode preNode = null;
         //遍历链表时的当前节点
@@ -32,5 +37,6 @@ public class ReverseListNode {
             curNode = nextNode;
         }
         return preNode;
+        */
     }
 }
