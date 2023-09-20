@@ -1,6 +1,7 @@
 package main.day12.listnode;
 
 import main.utils.simplenode.ListNode;
+import main.utils.simplenode.ListNodeUtil;
 
 /**
  * 链表中的数字相加
@@ -17,11 +18,11 @@ public class SumNodeNumbers {
      * @return <code>ListNode</code>-
      */
     public ListNode addTwoNumbers(ListNode head1,ListNode head2){
-        head1 = reverseList(head1);
-        head2 = reverseList(head2);
+        head1 = ListNodeUtil.reverseNode(head1);
+        head2 = ListNodeUtil.reverseNode(head2);
         ListNode node = addReverseNode(head1, head2);
 
-        return reverseList(node);
+        return ListNodeUtil.reverseNode(node);
     }
 
     /**
@@ -51,12 +52,7 @@ public class SumNodeNumbers {
         return dummy.next;
     }
 
-
-    /**
-     * 反转单链表<br>
-     * @param head <code>ListNode</code>-单链表
-     * @return <code>ListNode</code>-反转后的单链表
-     */
+/*
     private ListNode reverseList(ListNode head){
         ListNode pre = null;
         ListNode cur = head;
@@ -68,5 +64,5 @@ public class SumNodeNumbers {
         }
         return pre;
     }
-
+*/
 }
