@@ -58,9 +58,12 @@ public class ListNodeUtil {
      * @return <code>ListNode</code>-反转后链表的头节点
      */
     public static ListNode reverseNode(ListNode head){
+        //遍历链表时的当前节点
         ListNode cur = head;
+        //遍历链表时的前一个节点
         ListNode prev = null;
         while(cur != null){
+            //当前节点的下一个节点
             ListNode nextNode = cur.next;
 
             cur.next = prev;
