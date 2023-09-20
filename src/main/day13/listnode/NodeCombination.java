@@ -26,7 +26,7 @@ public class NodeCombination {
      * @param head <code>ListNode</code>-单链表head
      * @return <code>ListNode</code>-重组后的单链表
      */
-    public static ListNode getTwoListCombination(ListNode head){
+    public ListNode getTwoListCombination(ListNode head){
         ListNode back = head;
         ListNode front = back.next;
         while(front != null){
@@ -50,7 +50,7 @@ public class NodeCombination {
      * @param node2 <code>ListNode</code>-单链表node2
      * @return <code>ListNode</code>-哨兵节点之后的节点<code>dummy.next</code>
      */
-    private static ListNode combineNodes(ListNode dummy,ListNode node1,ListNode node2){
+    private ListNode combineNodes(ListNode dummy,ListNode node1,ListNode node2){
         ListNode prev = dummy;
         while (node1 != null && node2 != null){
             ListNode nextNode1 = node1.next;
