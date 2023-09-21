@@ -64,7 +64,7 @@ public class ReverseListDemo {
 
     public static ListNode initListNode() {
 
-        return ListNodeUtil.initializeSimpleNode().next;
+        return ListNodeUtil.initializeSimpleNode(6).next;
     }
 
     public static void printList(ListNode head) {
