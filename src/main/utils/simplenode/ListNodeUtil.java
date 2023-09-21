@@ -1,6 +1,6 @@
 package main.utils.simplenode;
 
-import main.day10.string.PalindromeString;
+import main.utils.simplenode.doublenode.Node;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -128,6 +128,38 @@ public class ListNodeUtil {
         listNodeList.add(head);
         listNodeList.add(temp);
         return listNodeList;
+    }
+
+    /**
+     * 获取断开的多级双向链表节点<br>
+     * @param count <code>int</code> 节点的个数
+     * @return <code>Node[]</code> -多级双向链表节点数组
+     */
+    public static Node[] getSimpleNodes(int count){
+        Node[] nodes = new Node[count];
+        for (int i = 0; i < nodes.length; i++) {
+            nodes[i] = new Node(i+1);
+        }
+        return nodes;
+    }
+
+    public static void initializeDoubleNode(Node dummy,int count,Node...nodes){
+        int len = nodes.length;
+        int row = nodes.length/count + 1;
+        nodes[0].next = len > 1 ? nodes[1] : null;
+        for (int i = 1; i < row; i++) {
+            nodes[i].next = nodes[i+1];
+            nodes[i].prev = nodes[i-1];
+        }
+        if (len - row <= 0 || count <= 0){
+            dummy.child = nodes[len-1];
+            return;
+        }
+        Node[] newNodes = new Node[len-count];
+        System.arraycopy(nodes, row, newNodes, 0, newNodes.length);
+        nodes[1].child = newNodes[0];
+
+        initializeDoubleNode(dummy,--count,newNodes);
     }
 
 }
