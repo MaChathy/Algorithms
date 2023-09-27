@@ -29,6 +29,7 @@ public class BinaryOdd {
         for (int i = 0;i < count - 1;i++){
             res.append(1);
         }
+
         return res.reverse().toString();
     }
 
