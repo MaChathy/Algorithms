@@ -15,8 +15,8 @@ public class MaxArea {
      * @param heights <code>int[]</code> 表示直方图柱子的高的数组
      * @return <code>int</code> -直方图的最大面积
      */
-    public int largestRectangleArea(int[] heights){
-        return solve1(heights);
+    public static int largestRectangleArea(int[] heights){
+        return solve3(heights);
     }
 
     /**
@@ -86,7 +86,7 @@ public class MaxArea {
      * @param heights <code>int[]</code> 表示直方图柱子的高的数组
      * @return <code>int</code> -直方图的最大面积
      */
-    public int solve3(int[] heights){
+    public static int solve3(int[] heights){
         Stack<Integer> indexStack = new Stack<>();
         indexStack.push(-1);
         int maxArea = 0;
@@ -108,12 +108,4 @@ public class MaxArea {
         return maxArea;
     }
 
-}
-
-class Main{
-    public static void main(String[] args) {
-        MaxArea area = new MaxArea();
-        int [] heights = new int[]{3,2,5,4,6,1,4,2};
-        System.out.println(area.solve1(heights));
-    }
 }
